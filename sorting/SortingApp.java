@@ -13,6 +13,8 @@ public class SortingApp{
         System.out.println("4. HeapSort");
         System.out.println("5. BubbleSort");
         System.out.println("6. QuickSort");
+        System.out.println("7. MergeSort");
+        System.out.println("8. RadixSort");
 		System.out.println("Enter your choice: ");
 		Scanner sc = new Scanner(System.in);
 		int choice = sc.nextInt();
@@ -39,6 +41,14 @@ public class SortingApp{
                 break;
             case 6:
                 QuickSort.sort(array, 0, array.length-1);
+                break;
+            case 7:
+                if(array == null || array.length <= 1) break;
+                int[] tmp = new int[array.length];
+                MergeSort.sort(array, 0, array.length - 1, tmp);
+                break;
+            case 8:
+                RadixSort.sort(array);
                 break;
 			default:
 				System.exit(0);
