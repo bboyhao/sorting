@@ -17,7 +17,7 @@ public class HeapSort {
 
     public static void heapify(int[] array, int start, int end){
         int tmp = array[start];
-        for(int i = 2*start+1; i<=end; i*=2){
+        for(int i = 2*start+1; i<=end; i=2*i+1){
             if(i<end && array[i]<array[i+1]){
                 ++i;
             }

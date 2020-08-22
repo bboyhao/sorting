@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class SortingApp{
 	public static void main(String[] args){
-		int[] array = {902,456,36,35,32,56,5345,6,74,62,44,6,65,78,649,569,34};
+		int[] array = {9,8,7,6,5,4,3,2,1,0,-1};
 		System.out.println("Choose one sorting method:");
 		System.out.println("1. InsertionSort");
 		System.out.println("2. ShellSort");
